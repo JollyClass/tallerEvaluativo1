@@ -1,1 +1,131 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluativo 1: Victoria Polo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #EF8FD7 0%, #764ba2 100%);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        p, li {
+            line-height: 1.6;
+        }
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Evaluativo 1: Victoria Polo (Código: 12345)</h1>
+
+        <section class="section">
+            <h2>Definición de Cloud Computing</h2>
+            <p>Cloud Computing, o Computación en la Nube, se refiere a la entrega de servicios de computación a través de Internet, incluyendo servidores, almacenamiento, bases de datos, redes, software y mucho más. Permite el acceso a recursos tecnológicos sin necesidad de infraestructura propia, pagando solo por lo que se usa. Esto aporta flexibilidad, escalabilidad y reducción de costos.</p>
+        </section>
+
+        <section class="section">
+            <h2>Modelos de Entrega en Cloud</h2>
+            <p>Los modelos de entrega definen cómo se proporcionan los servicios en la nube. A continuación, se explican los principales: Software as a Service (SaaS), Platform as a Service (PaaS) e Infrastructure as a Service (IaaS), con ejemplos.</p>
+            
+            <h3>1. Software as a Service (SaaS)</h3>
+            <p>El proveedor ofrece el software completo a través de la nube, y los usuarios lo usan sin preocuparse por la infraestructura subyacente. El proveedor maneja todo, desde el desarrollo hasta el mantenimiento.</p>
+            <ul>
+                <li>Ejemplo: Servicios como Gmail (Google), SalesForce, o Microsoft Office 365. Los usuarios acceden al correo electrónico o las herramientas de productividad directamente desde el navegador, sin instalar nada localmente.</li>
+            </ul>
+
+            <h3>2. Platform as a Service (PaaS)</h3>
+            <p>Providencia una plataforma completa para desarrollar, probar e implementar aplicaciones, incluyendo herramientas de desarrollo y lenguajes. Los desarrolladores no gestionan la infraestructura física, pero controlan sobre el código y aplicaciones.</p>
+            <ul>
+                <li>Ejemplo: Heroku, Google App Engine o Azure App Service. Un desarrollador puede subir su aplicación Node.js y el PaaS se encarga de escalarla automáticamente sin preocuparse por servidores.</li>
+            </ul>
+
+            <h3>3. Infrastructure as a Service (IaaS)</h3>
+            <p>Ofrece recursos básicos de infraestructura computacional a través de la nube, como máquinas virtuales, almacenamiento y redes. El usuario tiene control total sobre la configuración del software y el sistema operativo.</p>
+            <ul>
+                <li>Ejemplo: Amazon Web Services (AWS EC2), Microsoft Azure Virtual Machines o Google Compute Engine. Un administrador puede lanzar una instancia de servidor virtual para ejecutar una base de datos, configurándola según necesidades específicas.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Modelos de Despliegue en Cloud</h2>
+            <p>Los modelos de despliegue determinan cómo se distribuyen los recursos y quién puede acceder a ellos. Los principales son: Nube Pública, Nube Privada y Nube Híbrida.</p>
+            
+            <h3>1. Nube Pública</h3>
+            <p>Los recursos son proporcionados por un proveedor tercero y están disponibles para cualquiera en Internet. Es rentable y escalable, pero con menos control sobre seguridad y regulación.</p>
+            <ul>
+                <li>Ejemplo: AWS, Microsoft Azure o Google Cloud Platform, donde empresas como Netflix despliegan aplicaciones para acceso global.</li>
+            </ul>
+
+            <h3>2. Nube Privada</h3>
+            <p>La infraestructura está dedicada a una sola organización, operada por la empresa o un proveedor externo. Ofrece mayor seguridad y control, pero requiere inversión inicial.</p>
+            <ul>
+                <li>Ejemplo: VMware vSphere para bancos, donde se aloja datos sensibles de clientes sin compartir infraestructura con otros.</li>
+            </ul>
+
+            <h3>3. Nube Híbrida</h3>
+            <p>Combina nubes públicas y privadas, permitiendo mover datos y aplicaciones entre ambas según necesidades. Ideal para balancear costos, seguridad y escalabilidad.</p>
+            <ul>
+                <li>Ejemplo: Una empresa como Amazon podría usar nube privada para datos críticos y pública para picos de demanda, integrándose con AWS Hybrid Cloud.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Proveedores de Cloud Conocidos</h2>
+            <p>Algunos proveedores de servicios en la nube que conozco incluyen: Amazon Web Services (AWS), conocido por su amplia gama de servicios y escalabilidad; Microsoft Azure, integrado con herramientas de Microsoft; Google Cloud Platform (GCP), fuerte en análisis de datos y machine learning; y otros como IBM Cloud y Oracle Cloud, que ofrecen soluciones especializadas.</p>
+        </section>
+
+        <section class="section">
+            <h2>Explicación de Comandos Git Utilizados</h2>
+            <p>Durante el proceso, se utilizaron los siguientes comandos de Git para gestionar el repositorio y subir los cambios. A continuación, una explicación de cada uno:</p>
+            <ul>
+                <li><strong>git init:</strong> Inicializa un nuevo repositorio Git en el directorio local, creando la estructura para versionado de archivos.</li>
+                <li><strong>git add .</strong> o <strong>git add VictoriaPolo.html:</strong> Agrega el archivo al área de staging, preparándolo para el commit.</li>
+                <li><strong>git commit -m "mensaje":</strong> Crea un commit con los cambios modificados, guardando una instantánea del proyecto con un mensaje descriptivo, por ejemplo "Añadiendo página inicial".</li>
+                <li><strong>git branch tallerEvaluativo1:</strong> Crea una nueva rama llamada "tallerEvaluativo1" para trabajar en paralelo.</li>
+                <li><strong>git checkout tallerEvaluativo1:</strong> Cambia a la rama especificada para trabajar en ella.</li>
+                <li><strong>git remote add origin [URL del repositorio]:</strong> Agrega el repositorio remoto con una URL específica como origen para sincronizar cambios.</li>
+                <li><strong>git push -u origin tallerEvaluativo1:</strong> Sube los commits de la rama local al repositorio remoto, configurando la rama upstream para futuros pushes.</li>
+                <li><strong>git status:</strong> Verifica el estado del repositorio, mostrando archivos modificados, staged o committed.</li>
+                <li><strong>git log:</strong> Muestra el historial de commits para revisar cambios realizados.</li>
+            </ul>
+            <p>Nota: Los comandos para añadir miembros (como invitar a cespedeslina10@gmail.com) se realizan típicamente a través de la interfaz web del proveedor de Git (ej. GitHub), no con línea de comandos.</p>
+        </section>
+
+        <footer class="text-center mt-10">
+            <p>Página web creada para el evaluativo 1 por Victoria Polo.</p>
+        </footer>
+    </div>
+</body>
+</html>
+</content>
+</create_file>
