@@ -1,129 +1,160 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evaluativo 1: Victoria Polo</title>
+    <title>Laura Victoria Polo - Evaluativo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #EF8FD7 0%, #764ba2 100%);
-            color: #fff;
-            margin: 0;
-            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
+            color: #333;
         }
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        .section {
-            margin: 30px 0;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
+        section {
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
         }
-        h1 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 40px;
+        h1, h2 {
+            color: #4a5568;
         }
-        h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
         }
-        p, li {
-            line-height: 1.6;
-        }
-        ul {
-            margin-left: 20px;
+        code {
+            background: #f7fafc;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Evaluativo 1: Victoria Polo (Código: 12345)</h1>
+        <header class="text-center">
+            <h1 class="text-4xl font-bold mb-4">Laura Victoria Polo</h1>
+            <p class="text-lg">Código estudiantil: [834706]</p>
+        </header>
 
-        <section class="section">
-            <h2>Definición de Cloud Computing</h2>
-            <p>Cloud Computing, o Computación en la Nube, se refiere a la entrega de servicios de computación a través de Internet, incluyendo servidores, almacenamiento, bases de datos, redes, software y mucho más. Permite el acceso a recursos tecnológicos sin necesidad de infraestructura propia, pagando solo por lo que se usa. Esto aporta flexibilidad, escalabilidad y reducción de costos.</p>
+        <section id="cloud-models">
+            <h2 class="text-2xl font-semibold mb-4">Modelos de Cloud (Computación en la Nube)</h2>
+            <p>A continuación, se definen los modelos de cloud, que se refieren a los tipos de servicios de computación en la nube.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                <div class="text-center">
+                    <img src="https://placehold.co/400x300/3498db/ffffff" alt="Ilustración detallada de un edificio en la nube con iconos de software y computadoras, representando Software as a Service con aplicaciones accesibles desde dispositivos móviles y PCs, en un estilo moderno y tecnológico con colores azules y blancos para transmitir accesibilidad y conveniencia." />
+                    <h3 class="text-xl font-medium mt-2">SaaS (Software as a Service)</h3>
+                    <p>Servicio de software proporcionado a través de internet, donde el usuario accede a la aplicación sin gestionar infraestructura o software subyacente.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4bd82a81-b9e8-495e-be42-1c6bd6a7738a.png" alt="Representación visual de una plataforma en la nube con herramientas de desarrollo, servidores y códigos, ilustrando Platform as a Service con elementos como un escritorio de programador, APIs y contenedores, en estilo minimalista con colores rojos y naranjas para indicar innovación y construcción." />
+                    <h3 class="text-xl font-medium mt-2">PaaS (Platform as a Service)</h3>
+                    <p>Plataforma proporcionada por el proveedor para desarrollar, probar y desplegar aplicaciones sin preocuparse por la infraestructura subyacente.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/988e80a6-cf05-4369-8b39-eff38ef6ab75.png" alt="Imagen conceptual de infraestructura en la nube con servidores virtuales, almacenamiento y redes, mostrando Infrastructure as a Service con iconos de máquinas virtuales y data centers remotos, en un diseño futurista con verdes y grises para evocar escalabilidad y control." />
+                    <h3 class="text-xl font-medium mt-2">IaaS (Infrastructure as a Service)</h3>
+                    <p>Servicio que ofrece recursos de computación virtualizados, como servidores, almacenamiento y redes, para que el usuario gestione el software y la plataforma.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>Modelos de Entrega en Cloud</h2>
-            <p>Los modelos de entrega definen cómo se proporcionan los servicios en la nube. A continuación, se explican los principales: Software as a Service (SaaS), Platform as a Service (PaaS) e Infrastructure as a Service (IaaS), con ejemplos.</p>
-            
-            <h3>1. Software as a Service (SaaS)</h3>
-            <p>El proveedor ofrece el software completo a través de la nube, y los usuarios lo usan sin preocuparse por la infraestructura subyacente. El proveedor maneja todo, desde el desarrollo hasta el mantenimiento.</p>
-            <ul>
-                <li>Ejemplo: Servicios como Gmail (Google), SalesForce, o Microsoft Office 365. Los usuarios acceden al correo electrónico o las herramientas de productividad directamente desde el navegador, sin instalar nada localmente.</li>
-            </ul>
-
-            <h3>2. Platform as a Service (PaaS)</h3>
-            <p>Providencia una plataforma completa para desarrollar, probar e implementar aplicaciones, incluyendo herramientas de desarrollo y lenguajes. Los desarrolladores no gestionan la infraestructura física, pero controlan sobre el código y aplicaciones.</p>
-            <ul>
-                <li>Ejemplo: Heroku, Google App Engine o Azure App Service. Un desarrollador puede subir su aplicación Node.js y el PaaS se encarga de escalarla automáticamente sin preocuparse por servidores.</li>
-            </ul>
-
-            <h3>3. Infrastructure as a Service (IaaS)</h3>
-            <p>Ofrece recursos básicos de infraestructura computacional a través de la nube, como máquinas virtuales, almacenamiento y redes. El usuario tiene control total sobre la configuración del software y el sistema operativo.</p>
-            <ul>
-                <li>Ejemplo: Amazon Web Services (AWS EC2), Microsoft Azure Virtual Machines o Google Compute Engine. Un administrador puede lanzar una instancia de servidor virtual para ejecutar una base de datos, configurándola según necesidades específicas.</li>
-            </ul>
+        <section id="delivery-models">
+            <h2 class="text-2xl font-semibold mb-4">Modelos de Entrega (Delivery Models)</h2>
+            <p>Los modelos de entrega se refieren a estrategias para liberar software de manera eficiente. A continuación, ejemplos de cada uno.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                <div>
+                    <h3 class="text-xl font-medium">Blue-Green Deployment</h3>
+                    <p>En este modelo, se mantienen dos versiones del entorno: "azul" para la producción actual y "verde" para la nueva. Una vez probado, se cambia el tráfico al nuevo entorno. Ejemplo: Una aplicación web con cambios en la interfaz; se despliega en verde, prueba, y luego se conmuta.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium">Canary Deployment</h3>
+                    <p>Libera cambios a un pequeño porcentaje de usuarios para probar antes de un despliegue completo. Ejemplo: Una actualización de una app móvil que se lanza al 10% de los usuarios, se monitorea, y si es exitoso, se expande.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-medium">Rolling Deployment</h3>
+                    <p>Actualiza instancias una por una o en grupos pequeños para minimizar downtime. Ejemplo: Un servidor web con múltiples instancias; se actualiza una instancia a la vez mientras las otras manejan el tráfico.</p>
+                </div>
+            </div>
         </section>
 
-        <section class="section">
-            <h2>Modelos de Despliegue en Cloud</h2>
-            <p>Los modelos de despliegue determinan cómo se distribuyen los recursos y quién puede acceder a ellos. Los principales son: Nube Pública, Nube Privada y Nube Híbrida.</p>
-            
-            <h3>1. Nube Pública</h3>
-            <p>Los recursos son proporcionados por un proveedor tercero y están disponibles para cualquiera en Internet. Es rentable y escalable, pero con menos control sobre seguridad y regulación.</p>
-            <ul>
-                <li>Ejemplo: AWS, Microsoft Azure o Google Cloud Platform, donde empresas como Netflix despliegan aplicaciones para acceso global.</li>
-            </ul>
-
-            <h3>2. Nube Privada</h3>
-            <p>La infraestructura está dedicada a una sola organización, operada por la empresa o un proveedor externo. Ofrece mayor seguridad y control, pero requiere inversión inicial.</p>
-            <ul>
-                <li>Ejemplo: VMware vSphere para bancos, donde se aloja datos sensibles de clientes sin compartir infraestructura con otros.</li>
-            </ul>
-
-            <h3>3. Nube Híbrida</h3>
-            <p>Combina nubes públicas y privadas, permitiendo mover datos y aplicaciones entre ambas según necesidades. Ideal para balancear costos, seguridad y escalabilidad.</p>
-            <ul>
-                <li>Ejemplo: Una empresa como Amazon podría usar nube privada para datos críticos y pública para picos de demanda, integrándose con AWS Hybrid Cloud.</li>
-            </ul>
+        <section id="deployment-models">
+            <h2 class="text-2xl font-semibold mb-4">Modelos de Despliegue (Deployment Models)</h2>
+            <p>Los modelos de despliegue describen cómo se alojan y administran los servicios en la nube.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/23c0574f-0646-4f04-9c9b-9ef4b195167c.png" alt="Escena interna de un data center privado con servidores y cables, ilustrando despliegue on-premise con guardias de seguridad y control administrativo, en un estilo realista con púrpuras y negros para destacar privacidad y control local." />
+                    <h3 class="text-xl font-medium mt-2">On-Premise</h3>
+                    <p>El hardware y software se alojan en las instalaciones físicas de la empresa, ofreciendo máximo control y seguridad.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e05dde4a-eed3-4ee1-8e83-915c1b1ea7ce.png" alt="Vista aéreo de nubes flotantes con servidores y datos conectados globalmente, representando despliegue en la nube con simbolos de accesibilidad worldwide, en colores naranjas y amarillos para transmitir flexibilidad e innovación." />
+                    <h3 class="text-xl font-medium mt-2">Cloud</h3>
+                    <p>Los recursos se hospedan en centros de datos remotos administrados por proveedores de nube.</p>
+                </div>
+                <div class="text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/636237ce-daf6-4366-a257-ade0480f5859.png" alt="Combinación visual de un data center local y nubes remotas conectadas, mostrando despliegue híbrido con puentes de datos y equilibradores, en grises y azules para ilustrar integración y adaptabilidad." />
+                    <h3 class="text-xl font-medium mt-2">Híbrido</h3>
+                    <p>Combina on-premise y cloud, permitiendo datos sensibles localmente y escalabilidad en la nube.</p>
+                </div>
+            </div>
+            <p class="mt-4">Proveedores de cloud que conozco: Amazon Web Services (AWS), Microsoft Azure, Google Cloud Platform (GCP).</p>
         </section>
 
-        <section class="section">
-            <h2>Proveedores de Cloud Conocidos</h2>
-            <p>Algunos proveedores de servicios en la nube que conozco incluyen: Amazon Web Services (AWS), conocido por su amplia gama de servicios y escalabilidad; Microsoft Azure, integrado con herramientas de Microsoft; Google Cloud Platform (GCP), fuerte en análisis de datos y machine learning; y otros como IBM Cloud y Oracle Cloud, que ofrecen soluciones especializadas.</p>
-        </section>
-
-        <section class="section">
-            <h2>Explicación de Comandos Git Utilizados</h2>
-            <p>Durante el proceso, se utilizaron los siguientes comandos de Git para gestionar el repositorio y subir los cambios. A continuación, una explicación de cada uno:</p>
-            <ul>
-                <li><strong>git init:</strong> Inicializa un nuevo repositorio Git en el directorio local, creando la estructura para versionado de archivos.</li>
-                <li><strong>git add .</strong> o <strong>git add VictoriaPolo.html:</strong> Agrega el archivo al área de staging, preparándolo para el commit.</li>
-                <li><strong>git commit -m "mensaje":</strong> Crea un commit con los cambios modificados, guardando una instantánea del proyecto con un mensaje descriptivo, por ejemplo "Añadiendo página inicial".</li>
-                <li><strong>git branch tallerEvaluativo1:</strong> Crea una nueva rama llamada "tallerEvaluativo1" para trabajar en paralelo.</li>
-                <li><strong>git checkout tallerEvaluativo1:</strong> Cambia a la rama especificada para trabajar en ella.</li>
-                <li><strong>git remote add origin [URL del repositorio]:</strong> Agrega el repositorio remoto con una URL específica como origen para sincronizar cambios.</li>
-                <li><strong>git push -u origin tallerEvaluativo1:</strong> Sube los commits de la rama local al repositorio remoto, configurando la rama upstream para futuros pushes.</li>
-                <li><strong>git status:</strong> Verifica el estado del repositorio, mostrando archivos modificados, staged o committed.</li>
-                <li><strong>git log:</strong> Muestra el historial de commits para revisar cambios realizados.</li>
+        <section id="git-commands">
+            <h2 class="text-2xl font-semibold mb-4">Explicación de Comandos de Git Utilizados</h2>
+            <p>En este proyecto, se utilizaron los siguientes comandos de Git para crear el repositorio, rama, subir cambios y añadir miembros.</p>
+            <ul class="list-disc pl-5 mt-4">
+                <li><code>git init</code>: Inicializa un nuevo repositorio de Git en el directorio local.</li>
+                <li><code>git checkout -b tallerEvaluativo1</code>: Crea y cambia a una nueva rama llamada "tallerEvaluativo1".</li>
+                <li><code>git add .</code>: Añade todos los archivos modificados al staging area para el próximo commit.</li>
+                <li><code>git commit -m "Mensaje"</code>: Confirma los cambios con un mensaje descriptivo, creando un snapshot del estado actual.</li>
+                <li><code>git remote add origin [URL]</code>: Añade el repositorio remoto como origen.</li>
+                <li><code>git push -u origin tallerEvaluativo1</code>: Sube la rama y cambios al repositorio remoto, estableciendo el upstream.</li>
             </ul>
-            <p>Nota: Los comandos para añadir miembros (como invitar a cespedeslina10@gmail.com) se realizan típicamente a través de la interfaz web del proveedor de Git (ej. GitHub), no con línea de comandos.</p>
+            <p class="mt-4">Para añadir miembros en GitHub, se debe ir a Configuración > Miembros > Invitar a colaboradores, e ingresar el email (cespedeslina10@gmail.com).</p>
         </section>
 
-        <footer class="text-center mt-10">
-            <p>Página web creada para el evaluativo 1 por Victoria Polo.</p>
-        </footer>
+        <section id="screenshots">
+            <h2 class="text-2xl font-semibold mb-4">Simulación de Pantallazos (Para Word Document)</h2>
+            <p>A continuación, imágenes simuladas representando pantallazos de la consola y páginas web, con descripciones detalladas. Utilice estas como guía para capturas reales en su documento Word.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2ff728ff-6548-4f32-a550-7d66095dfda9.png" alt="Captura de pantalla de consola de Git mostrando el comando git init ejecutado, con directorio inicializado y confirmación de éxito en una ventana de terminal negra con texto verde, incluyendo la ruta del directorio y mensaje de correcto establecimiento del repositorio." />
+                    <p><strong>Comando git init en consola</strong></p>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7cc3705b-cc09-4002-9ae4-0989ec4f7c29.png" alt="Imagen de la página web abierta en navegador, mostrando la sección de modelos de cloud con imágenes de tarjetas estilizadas en HTML, barras de navegación y contenido explicado, en formato responsivo con fondo gradient y elementos CSS aplicados." />
+                    <p><strong>Página web inicial en navegador</strong></p>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9fabd1eb-29fe-48c5-a9f1-075c92545699.png" alt="Pantallazo de consola con git checkout -b tallerEvaluativo1 ejecutado, mostrando creación de rama y conteo de commits, en terminal con indicadores de éxito y lista de ramas disponibles." />
+                    <p><strong>Creación de rama en consola</strong></p>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d874830e-92fb-4b3b-9dc5-beae8764ac23.png" alt="Vista de la página web actualizada con secciones de modelos de despliegue añadidas, incluyendo definiciones y proveedores, con diseño responsivo y imágenes de placehold.co cargadas, mostrando cambios en HTML y CSS." />
+                    <p><strong>Página web con cambios en despliegue</strong></p>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b24ac25-5ce9-4aeb-9050-b38a82b56850.png" alt="Captura de consola de git add . y git commit -m 'Añadido contenido de despliegue', con listado de archivos añadidos, mensaje de commit y hash generado, en ventana terminal con colores azules y verdes." />
+                    <p><strong>Commit de cambios en consola</strong></p>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aa44e8ce-2c9a-4f29-9e00-30e0d15cbe5a.png" alt="Página web final completa con explicaciones de comandos Git añadidas, sección de pantallazos simulados, barra de footer y layout moderno, visible en navegador con elementos interactivos si aplican." />
+                    <p><strong>Página web final con comandos Git</strong></p>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
